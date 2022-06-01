@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4{
+  font-family: 'Fira Sans', sans-serif;
+}
+
+p, span,a, label, button, input,select{
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+main .section-newsletter{
+    background-image: url('../img/fundo-form.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 30px 0;
+  }
+  main .section-newsletter:before {
+    content: "";
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    opacity: .7;
+  }
+  main .section-newsletter .conteudo{
+    width: 90%;
+    z-index: 1;
+    position: relative;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+    max-width: 1200px;
+  }
+  
+  main .section-newsletter .conteudo h2{
+    color: #f45353;
+    font-size: 1.9rem;
+  }
+  main .section-newsletter .conteudo p{
+    color: #fff;
+    margin: 20px 0;
+  }
+  main .section-newsletter .conteudo  form{
+    width: 100%;
+    display: grid;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  main .section-newsletter .conteudo  form input{
+    font-size: 1.1rem;
+    padding: 7px 10px;
+    border: 0;
+    border-radius: 3px;
+    margin: 4px 0px;
+    
+  }
+  main .section-newsletter .conteudo  form button{
+    font-size: 1.1rem;
+    width: 100%;
+    border: 0;
+    border-radius: 2px;
+    padding: 8px;
+    margin-top: 10px;
+    background: #00891d;
+    color: white;
+    font-weight: 600;
+  
+  }
+  /*------------- Footer ---------------*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    background-color: #0a57cc;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+footer div{
+    max-width: 500px;
+}
+footer .social{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+footer .social .redes-sociais svg{
+    color: white;
+    fill: white;
+    width: 35px;
+    height: 35px;
+}
+
+footer .social .contato{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .social .contato p, footer .contato a{
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 6px 0;
+}
+
+footer .social .contato p svg{
+    width: 16px;
+}
+
+footer .social .contato a svg{
+    width: 20px;
+}
+
+footer .logo{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+footer .logo img{
+    width: 100%;
+    max-width: 300px;
+}
+@media only screen and (min-width: 650px) {
+    footer{
+        flex-direction: row;
+    }
+}
