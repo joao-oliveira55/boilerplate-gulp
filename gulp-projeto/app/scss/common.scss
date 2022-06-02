@@ -49,6 +49,7 @@ main .section-newsletter{
   main .section-newsletter .conteudo p{
     color: #fff;
     margin: 20px 0;
+    font-size: 1.1rem;
   }
   main .section-newsletter .conteudo  form{
     width: 100%;
@@ -140,4 +141,8 @@ footer .logo img{
     footer{
         flex-direction: row;
     }
+    main .section-newsletter .conteudo{
+      grid-template-columns: 1fr 1fr;
+    }
 }
+
