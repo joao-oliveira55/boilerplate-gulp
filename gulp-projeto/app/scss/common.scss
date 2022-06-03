@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
+
 *{
   margin: 0;
   padding: 0;
@@ -13,7 +14,75 @@ p, span,a, label, button, input,select{
   font-family: 'Open Sans', sans-serif;
 }
 
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: fixed;
+    top: 0;
+    min-height: 80px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#282828),to(rgba(0,0,0,0)));
+    background: -webkit-linear-gradient(top,#282828,rgba(0,0,0,0));
+    background: linear-gradient(180deg,#282828 0,rgba(0,0,0,0));
+}
 
+header .logo{
+  display:
+  flex;
+  align-items: center;
+  justify-content: flex-start;
+  grid-row: 2/3;
+  margin: 10px;
+}
+header .logo img{
+  width:60px;
+}
+header .categoria{
+  display: flex;
+}
+header .categoria .menu{
+  width:100%;
+}
+header .categoria .menu ul{
+  display:
+  flex;
+  width: 100%;
+  height: 52px;
+  align-items: center;
+  justify-content: flex-start;
+}
+header .categoria .menu ul li{
+  width: -webkit-calc((100vw)/3);
+  width: calc((100vw)/3);
+  max-width: 200px;
+  list-style: none;
+  text-align: center;
+  background: black;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .categoria .menu ul li:nth-child(1){
+  background: #00891d;
+}
+header .categoria .menu ul li:nth-child(2){
+  background: #0a57cc;
+}
+header .categoria .menu ul li:nth-child(3){
+  background: #E55029;
+}
+
+header .categoria .menu ul li a{
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: 400;
+}
 main .section-newsletter{
     background-image: url('../img/fundo-form.webp');
     background-size: cover;
@@ -137,6 +206,20 @@ footer .logo img{
     width: 100%;
     max-width: 300px;
 }
+@media only screen and (min-width: 500px){
+  
+  header .categoria .menu ul li a{
+    font-size: 1.3rem;
+  }
+    header .categoria .menu ul li{
+      width: -webkit-calc((50vw)/3);
+      width: calc((50vw)/3);
+    }
+    header .logo {
+      justify-content: center;
+      grid-row: 1/2;
+    }
+}
 @media only screen and (min-width: 650px) {
     footer{
         flex-direction: row;
@@ -144,5 +227,6 @@ footer .logo img{
     main .section-newsletter .conteudo{
       grid-template-columns: 1fr 1fr;
     }
+    
 }
 
